@@ -35,6 +35,7 @@ export default tseslint.config(
         'warn',
         { allowConstantExport: true },
       ],
+      'prettier/prettier': 'error',
       'import/order': [
         'error',
         {
@@ -50,7 +51,6 @@ export default tseslint.config(
           alphabetize: { order: 'asc', caseInsensitive: true },
         },
       ],
-      'prettier/prettier': ['error', { semi: false, singleQuote: true }],
     },
   },
   eslintPluginPrettierRecommended,

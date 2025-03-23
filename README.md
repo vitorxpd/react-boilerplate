@@ -56,4 +56,3 @@ Made with ❤️ using modern web tools.
 **Vitor Diniz**
 📧 dinizadroit@gmail.com
 🌐 [vitordiniz.dev](https://vitordiniz.dev)
-

@@ -1,54 +1,59 @@
-# React + TypeScript + Vite
+# 🚀 React Boilerplate
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a modern and minimal boilerplate for building React applications using TypeScript and Vite.
 
-Currently, two official plugins are available:
+## 🔧 Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React + TypeScript** — powered by [Vite](https://vitejs.dev/) for fast development
+- **Path Alias** — `@` is configured to point to the `src` folder
+- **React Router v7** — for client-side routing
+- **Tailwind CSS v4** — utility-first CSS framework
+- **ESLint v9 + Prettier** — for linting and code formatting
+- **Husky + lint-staged + Commitlint** — to ensure clean code and conventional commits
 
-## Expanding the ESLint configuration
+## 🛠️ Scripts
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+pnpm dev       # start development server
+pnpm build     # build for production
+pnpm preview   # preview production build
+pnpm lint      # run ESLint
+pnpm format    # run Prettier
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📎 Requirements
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- [Node.js](https://nodejs.org/) (version 18 or higher recommended)
+- [pnpm](https://pnpm.io/) — make sure to install it globally:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install -g pnpm
 ```
+
+## ✅ Git Hooks & Linting
+
+- **Husky** runs hooks on `pre-commit` and `commit-msg`
+- **Lint-Staged** runs ESLint and Prettier only on staged files
+- **Commitlint** enforces [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+
+## 📦 Recommended VSCode Extensions
+
+- `dbaeumer.vscode-eslint`
+- `bradlc.vscode-tailwindcss`
+
+## 🧪 How to Use
+
+1. Clone the repository
+2. Run `pnpm install`
+3. Start developing with `pnpm dev`
+
+---
+
+Made with ❤️ using modern web tools.
+
+## 👤 Author
+
+**Vitor Diniz**
+📧 dinizadroit@gmail.com
+🌐 [vitordiniz.dev](https://vitordiniz.dev)
+

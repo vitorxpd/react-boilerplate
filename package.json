@@ -1,14 +1,20 @@
 {
-  "name": "react-template",
+  "name": "react-boilerplate",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "description": "A modern React boilerplate featuring Vite",
+  "author": {
+    "name": "Vitor Diniz",
+    "email": "dinizadroit@gmail.com",
+    "url": "https://vitordiniz.dev"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "lint": "eslint src --ext .ts,.tsx",
-    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "format": "prettier src --write",
     "prepare": "husky"
   },
   "dependencies": {
